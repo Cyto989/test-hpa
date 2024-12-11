@@ -39,7 +39,7 @@ spec:
             requests:
               cpu: 50m
             limits:
-              cpu: 80
+              cpu: 80m
     {{- with .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
