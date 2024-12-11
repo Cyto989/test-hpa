@@ -7,7 +7,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: guestbook-ui
+    name: test-helm-guestbook
   minReplicas: 2
   maxReplicas: 10
   metrics:
