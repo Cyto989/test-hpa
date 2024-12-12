@@ -39,7 +39,7 @@ spec:
           resources:
             requests:
               cpu: 50m
-              memory: 64Mi
+              memory: 70Mi
             limits:
               cpu: 75m
     {{- with .Values.nodeSelector }}
