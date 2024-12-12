@@ -4,3 +4,10 @@ spec:
   source:
     repoURL: https://github.com/Cyto989/test-hpa
   targetRevision: main
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    name: test-helm-guestbook
+    namespace: default
+    jsonPointers:
+    - /spec/replicas
