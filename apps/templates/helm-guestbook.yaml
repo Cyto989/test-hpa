@@ -21,6 +21,12 @@ spec:
       namespace: default
       jsonPointers:
         - /spec/replicas
+    - group: autoscaling
+      kind: HorizontalPodAutoscaler
+      name: guestbook-ui-hpa
+      namespace: default
+      jsonPointers:
+        - /spec/metrics
   syncPolicy:
     automated:
       prune: true
