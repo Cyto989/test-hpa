@@ -22,4 +22,6 @@ spec:
       jsonPointers:
         - /spec/replicas
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
