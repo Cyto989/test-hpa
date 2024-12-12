@@ -15,12 +15,18 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   ignoreDifferences:
-    - group: '*'
-      kind: '*'
-      name: '*'
-      namespace: '*'
+    - group: apps
+      kind: Deployment
+      name: test-helm-guestbook
+      namespace: default
       jsonPointers:
         - /spec/replicas
+    - group: apps
+      kind: Deployment
+      name: test-helm-guestbook
+      namespace: default
+      managedFieldsManagers:
+        - horizontal-pod-autoscaler
   syncPolicy:
     automated:
       prune: true
