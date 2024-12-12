@@ -23,4 +23,4 @@ spec:
         - type: Percent
           value: 50
           periodSeconds: 60
-      stabilizationWindowSeconds: 300
+      stabilizationWindowSeconds: 60
