@@ -17,6 +17,8 @@ spec:
   ignoreDifferences:
   - group: apps
     kind: Deployment
+    name: test-helm-guestbook
+    namespace: default
     jsonPointers:
     - /spec/replicas
   - group: apps
